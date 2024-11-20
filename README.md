@@ -10,7 +10,7 @@ Please note that this client is made especially for pauytrh and might not fit yo
 ## INSTALL
  
 
-1.  Download the "install\_[pauyshot.sh](http://pauyshot.sh) " file
+1.  Download the "install_pauyshot.sh " file
      
 2.  Open your terminal
      
