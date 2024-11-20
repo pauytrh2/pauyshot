@@ -35,3 +35,10 @@ Thats it, You are good to go! (to run the app run
     pauyshot
 
 in your terminal or search for "pauyshot" in your app menu (press SUPER to see it))
+
+---
+
+## TOGGLE FPS COUNTER AND KEYBOARD INDICATOR
+
+- toggle the fps counter with the key: "f"
+- toggle the keyboard indicator with the key: "v"
