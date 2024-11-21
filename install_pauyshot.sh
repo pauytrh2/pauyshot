@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Pauyshot AppImage Installer
+# Pauyshot AppImage Installer (Google Drive)
 
 # Variables
-REPO_URL="https://github.com/pauytrh2/pauyshot.git"
+APPIMAGE_URL="https://drive.google.com/uc?export=download&id=1KmQOc2JUsnst9cN7QbknE-76ICL2sPep"
 INSTALL_DIR="/usr/local/bin"
 DESKTOP_FILE_PATH="/usr/share/applications/pauyshot.desktop"
 
@@ -13,21 +13,15 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-# Clone the repository
+# Download the AppImage
 TEMP_DIR=$(mktemp -d)
-echo "Cloning Pauyshot repository..."
-git clone "$REPO_URL" "$TEMP_DIR" || { echo "Failed to clone repository"; exit 1; }
-
-# Locate the AppImage
-APPIMAGE=$(find "$TEMP_DIR" -name "*.AppImage" -type f | head -n 1)
-if [ -z "$APPIMAGE" ]; then
-    echo "No AppImage found in the repository."
-    exit 1
-fi
+APPIMAGE_PATH="$TEMP_DIR/pauyshot.AppImage"
+echo "Downloading Pauyshot AppImage..."
+curl -L -o "$APPIMAGE_PATH" "$APPIMAGE_URL" || { echo "Failed to download AppImage"; exit 1; }
 
 # Install the AppImage
 echo "Installing Pauyshot..."
-cp "$APPIMAGE" "$INSTALL_DIR/pauyshot"
+cp "$APPIMAGE_PATH" "$INSTALL_DIR/pauyshot"
 chmod +x "$INSTALL_DIR/pauyshot"
 
 # Create a .desktop entry
