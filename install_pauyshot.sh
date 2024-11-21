@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Pauyshot AppImage Installer (Google Drive)
+# Pauyshot AppImage Installer (File.io)
 
 # Variables
-APPIMAGE_URL="https://drive.google.com/uc?export=download&id=1KmQOc2JUsnst9cN7QbknE-76ICL2sPep"
+APPIMAGE_URL="https://file.io/GgjXJuM4ykFy"
 INSTALL_DIR="/usr/local/bin"
 DESKTOP_FILE_PATH="/usr/share/applications/pauyshot.desktop"
 
