@@ -17,7 +17,7 @@ Please note that this client is made especially for pauytrh and might not fit yo
 3.  Move to your downloads folder (e.g.
      
     
-        cd /home/USERNAME/Downloads
+        cd ~/Downloads
     
     )
      
