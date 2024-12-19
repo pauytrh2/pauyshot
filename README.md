@@ -14,12 +14,11 @@ Please note that this client is made especially for pauytrh and might not fit yo
      
 2.  Open your terminal
      
-3.  Move to your downloads folder (e.g.
+3.  Move to your downloads folder
      
     
         cd ~/Downloads
-    
-    )
+
      
 4.  Run
      
